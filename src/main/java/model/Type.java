@@ -1,7 +1,7 @@
 package model;
 
 public class Type {
-	
+
 	@Override
 	public String toString() {
 		return "Type [name=" + name + ", id=" + id + "]";
@@ -9,7 +9,7 @@ public class Type {
 
 	String name;
 	Long id;
-	
+
 	public Type(String name, Long id) {
 		this.name = name;
 		this.id = id;
@@ -62,9 +62,5 @@ public class Type {
 			return false;
 		return true;
 	}
-	
-	
-	
-	
 
 }
