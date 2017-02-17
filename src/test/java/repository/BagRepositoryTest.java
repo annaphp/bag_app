@@ -36,10 +36,12 @@ public class BagRepositoryTest {
 	@Before
 	public void setUp() throws Exception {
 		name = "a"+ Math.random();
+		
 		Type type = new Type(name);
 		typeRepo.save(type);
-		 t = typeRepo.findByName(name);
-		bag = new Bag(t,name,"a bag",(long)67);
+		t = typeRepo.findByName(name);
+		
+		bag = new Bag(t, name, "a bag", (long)67);
 		System.out.println(bag.getName());
 		bagRepo.save(bag);
 	}

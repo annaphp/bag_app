@@ -1,6 +1,5 @@
 
 
-DROP TABLE IF EXISTS `bag_type`;
 
 CREATE TABLE `bag_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -9,7 +8,6 @@ CREATE TABLE `bag_type` (
 );
 
 
-DROP TABLE IF EXISTS `bag`;
 CREATE TABLE `bag` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `bag_type_id` int(11) DEFAULT NULL,

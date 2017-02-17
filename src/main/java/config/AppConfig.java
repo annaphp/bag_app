@@ -32,8 +32,10 @@ public class AppConfig {
 	@Profile("test")
 	public DataSource embededDataSource() {
 		EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
-		return builder.setType(EmbeddedDatabaseType.H2).addScript("init.sql").build();
-
+		return builder
+				.setType(EmbeddedDatabaseType.H2)
+				.addScript("init.sql")
+				.build();
 	}
 
 	@Bean
